@@ -16,3 +16,11 @@ And no, you *probably* shouldn't just copy-paste them — unless you enjoy debug
 > (Or do… but don't complain when your monitor catches fire.)
 
 ---
+
+![Hyprland rice](img/screenshot_20250812_211226.png)
+
+![Hyprland rice](img/screenshot_20250812_211245.png)
+
+![Hyprland rice](img/screenshot_20250812_211327.png)
+
+![Hyprland rice](img/screenshot_20250812_211616.png)
