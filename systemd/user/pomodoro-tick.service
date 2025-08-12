@@ -1,0 +1,9 @@
+[Unit]
+Description=Pomodoro Tick Loop
+
+[Service]
+ExecStart=%h/.config/scripts/Pomodoro/tick_loop.sh
+Restart=always
+
+[Install]
+WantedBy=default.target

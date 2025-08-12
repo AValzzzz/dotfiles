@@ -1,0 +1,93 @@
+* {
+  font-family: "Jetbrains Mono Nerdfont";
+  border-radius: 10px;
+}
+
+#waybar {
+  background: #363636;
+  color: #fff;
+}
+
+#workspaces button {
+  color: #787c99;
+}
+
+#workspaces button.active {
+  color: #fff;
+}
+
+#workspaces button.special {
+  color: #ad8ee6;
+}
+
+#workspaces button.urgent {
+  color: #f7768e;
+}
+
+#workspaces button:hover {
+  box-shadow: none;
+  text-shadow: none;
+  background: none;
+  border: none;
+  transition: none;
+  color: #7aa2f7;
+}
+
+#window,
+#network,
+#tray {
+  color:rgb(93, 196, 148);
+}
+#cpu,
+#temperature {
+  color: #84bfe0;
+}
+#memory,
+#pulseaudio {
+  color : #fcd283;
+  padding-right: 12px;
+}
+#battery,
+#clock {
+  padding-left: 12px;
+}
+
+#battery,
+#cpu {
+  color:#d098d4;
+  padding-right: 12px;
+}
+#temperature,
+#memory {
+  padding-right: 2px;
+  color:#b4d5f0
+}
+
+#tray,
+#pulseaudio,
+#network,
+#clock {
+  margin-left: 12px;
+}
+
+
+#custom-power {
+  padding-left: 12px;
+  padding-right: 20px;
+  color:#f75e5e;
+}
+
+#custom-launcher {
+  margin-right:20px;
+  margin-left:10px;
+  font-size: 24px;
+  color: #89DCEB;
+}
+
+#custom-\={
+  color: rgb(136, 214, 84);
+}
+
+#custom-pomodoro{
+  color:rgb(156, 230, 106);
+}

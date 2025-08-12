@@ -1,0 +1,117 @@
+{
+  "margin-top": 8,
+  "margin-left": 8,
+  "margin-right": 8,
+  
+
+  // All modules : battery, pulseaudio, tray, hyprland/workspaces, clock, cpu, temperature, memory, network
+
+  "layer": "top",
+  "position": "top",
+  // "modules-left": ["custom/launcher", "battery", "cpu", "temperature", "memory"],
+  // "modules-center": ["hyprland/workspaces"],
+  // "modules-right": ["tray", "custom/playerctl", "pulseaudio", "network", "clock", "custom/power"],
+
+  "modules-left": ["custom/launcher", "temperature","hyprland/workspaces", "tray"],
+  "modules-center": ["custom/=", "custom/playerctl"],
+  "modules-right": ["custom/pomodoro", "pulseaudio", "cpu", "memory", "battery", "network", "clock","custom/power"],
+  "hyprland/workspaces": {
+    "format": ["󰬺"],
+    "show-special": true,
+  },
+
+  "network": {
+    "format-alt": " {bandwidthUpOctets}  {bandwidthDownOctets}",
+    "format": "{icon} {essid}",
+    "format-icons": ["󰤯 ", "󰤟 ", "󰤢 ", "󰤨 "],
+    "format-ethernet": "󰈁 ",
+    "format-disconnected": "󰤮 ",
+    "format-disabled": "󰟢 ",
+    "interval": 1,
+    "tooltip": false,
+  },
+
+  "cpu": {
+    "format": "  {usage}%",
+    "interval": 3,
+  },
+
+  "temperature": {
+    "format": "{icon} {temperatureC}°C",
+    "interval": 3,
+    "format-icons": ["", "", "", ""],
+    "tooltip": false,
+  },
+
+  "memory": {
+    "format-alt": "  {used} GiB",
+    "format": "  {percentage}%",
+    "interval": 3,
+    "tooltip": true,
+    "tooltip-format": "{used}/{total} GiB",
+  },
+
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-bluetooth": "󰦢 ",
+    "format-muted": " ",
+    "format-icons": [" ", " ", " "],
+    "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+  },
+
+  "tray": {
+    "spacing":18,
+  },
+
+  "battery": {
+    "format": "{icon}  {capacity}%",
+    "format-icons": ["", "", "", "", ""],
+    "interval": 5,
+  },
+
+  "clock": {
+    "format": "  {:%R} ",
+    "format-alt": "  {:%d %a %B %Y} ",
+    "tooltip": false,
+  },
+
+  "custom/=": {
+      "format": " {}",
+  },
+
+  "custom/playerctl": {
+    "format": "{}",
+    "exec": "playerctl metadata --format '{{ title }}'",
+    "interval": 2,
+    "return-type": "text",
+    "on-click": "playerctl play-pause",
+    "tooltip":false,
+    "scroll":true,
+  },
+
+   "custom/power": {
+    "format": "⏻",              
+    "on-click": "systemctl poweroff",
+    "tooltip": "Éteindre le PC",
+    "interval": 0
+  },
+
+
+
+  "custom/launcher":{
+        "format": "",
+        "tooltip":false,
+      },
+
+  "custom/pomodoro": {
+    "format": "{}",
+    "exec": "~/.config/scripts/Pomodoro/pomodoro.sh",
+    "interval": 1,
+    "on-click": "~/.config/scripts/Pomodoro/pomodoro.sh click",
+    "on-click-right": "~/.config/scripts/Pomodoro/pomodoro.sh right-click",
+    "on-scroll-up": "~/.config/scripts/Pomodoro/pomodoro.sh scroll_up",
+    "on-scroll-down": "~/.config/scripts/Pomodoro/pomodoro.sh scroll_down",
+    "tooltip":false,
+  }
+
+}

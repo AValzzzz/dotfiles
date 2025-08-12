@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AValz's homepage</title>
+    <style>
+      
+      :root {
+        --color-re: #FF4500;
+        --color-yt: #FF0000;
+        --color-gh: #CCCCCC;
+        --color-lh: #256b34;
+        --text-light: #def;
+        --text-dark: #333;
+      }
+
+      html {
+        background-color: #1f232b;
+        color: #f0e1bb;
+        height: 90%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+      }
+      
+
+      h1 {
+        font-size: 65px;
+        margin-bottom: 20px;
+      }
+
+      h1 .fire {
+        background-image: linear-gradient(65deg,#607eaa, #b6fbff);
+/*      background-image: linear-gradient(65deg, #2E1437,#948E99);*/
+/*      background-image: linear-gradient(65deg, #FEAC5E,#C779D0,#4BC0C8);*/
+/*      background-image: linear-gradient(65deg, #fb4934, #fabd2f);*/
+/*      background-image: linear-gradient(65deg,  #D1913C, #FFD194);*/
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .icons {
+        display: flex;
+        flex-wrap: wrap;
+        width: 700px;
+        gap: 115px;
+      }
+
+      .icon {
+        font-family: "JetBrainsMono Nerd Font", "FiraCode Nerd Font", monospace;
+        display: flex;
+        background: #2f3541;
+        transition: all 0.3s ease;
+        border-radius: 11px;
+      }
+      
+      .icon a {
+        width: 75px;
+        height: 75px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration:none;
+      }
+ 
+      .icon span {
+        font-size: 24px;
+        color: var(--text-light);
+        opacity: 0.6;
+        line-height: 1;
+      }
+      .icon:hover {
+        cursor: pointer;
+      }
+      .icon:hover span {
+        color: #fff;
+        opacity: 1;
+      }
+
+      .icon.reddit span, .icon.youtube span, .icon.github span, .icon.localhost span {
+        font-size: 35px;
+      }
+
+      .icon.reddit span{
+        transform: translate(-3px,-0px);
+      }
+      .icon.github span{
+        transform: translate(-5px,-0px);
+      }
+      .icon.youtube span{
+        transform: translate(-5px,+2px);
+      }
+      .icon.localhost span{
+        transform: translate(+2px,-0px);
+      }
+
+
+      .icon.reddit:hover {
+        background: var(--color-re);
+      }
+      .icon.youtube:hover {
+        background: var(--color-yt);
+      }
+      .icon.github:hover {
+        background: var(--color-gh);
+      }
+      .icon.localhost:hover {
+        background: var(--color-lh);
+      }
+
+      .icon.github:hover span {
+        color: var(--text-dark);
+      }
+    </style>
+  </head>
+  <body>
+    <h1><a class="fire">AValz's</a> homepage</h1>
+    <div class="icons">
+      <div class="icon reddit"><a href="https://www.reddit.com" target="_top"><span></span></a></div>
+      <div class="icon github"><a href="https://github.com/AValzzzz" target="_top"><span></span></a></div>
+      <div class="icon youtube"><a href="https://www.youtube.com/" target="_top"><span></span></a></div>
+      <div class="icon localhost"><a href="http://localhost:8000/" target="_top"><span></span></a></div>
+    </div>
+  </body>
+</html>
+
