@@ -17,10 +17,10 @@ And no, you *probably* shouldn't just copy-paste them — unless you enjoy debug
 
 ---
 
-![Hyprland rice](img/screenshot_20250812_211226.png)
+![Hyprland](img/screenshot_20250812_211226.png)
 
-![Hyprland rice](img/screenshot_20250812_211245.png)
+![Waybar+hyprpaper](img/screenshot_20250812_211245.png)
 
-![Hyprland rice](img/screenshot_20250812_211327.png)
+![Firefox](img/screenshot_20250812_211327.png)
 
-![Hyprland rice](img/screenshot_20250812_211616.png)
+![Wofi](img/screenshot_20250812_211616.png)
