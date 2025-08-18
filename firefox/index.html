@@ -6,11 +6,13 @@
       
       :root {
         --color-re: #FF4500;
-        --color-yt: #FF0000;
+        --color-tw: #008cff;
         --color-gh: #CCCCCC;
         --color-lh: #256b34;
         --text-light: #def;
         --text-dark: #333;
+        --bg:#4f6874;
+        --text-search:#ddd;
       }
 
       html {
@@ -55,7 +57,6 @@
       .icon a {
         width: 75px;
         height: 75px;
-        border-radius: 8px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -76,7 +77,7 @@
         opacity: 1;
       }
 
-      .icon.reddit span, .icon.youtube span, .icon.github span, .icon.localhost span {
+      .icon.reddit span, .icon.twitter span, .icon.github span, .icon.localhost span {
         font-size: 35px;
       }
 
@@ -86,8 +87,8 @@
       .icon.github span{
         transform: translate(-5px,-0px);
       }
-      .icon.youtube span{
-        transform: translate(-5px,+2px);
+      .icon.twitter span{
+        transform: translate(-4px,+2px);
       }
       .icon.localhost span{
         transform: translate(+2px,-0px);
@@ -97,8 +98,8 @@
       .icon.reddit:hover {
         background: var(--color-re);
       }
-      .icon.youtube:hover {
-        background: var(--color-yt);
+      .icon.twitter:hover {
+        background: var(--color-tw);
       }
       .icon.github:hover {
         background: var(--color-gh);
@@ -110,16 +111,32 @@
       .icon.github:hover span {
         color: var(--text-dark);
       }
+
+
+      .fake-editable {
+        width: 645px;
+        height: 55px;
+        border-radius: 50px;
+        color:var(--text-search);
+        font-size: 20px;
+        padding-left:30px;
+        background-color: var(--bg);
+        border-width: 3px;
+      }
+
     </style>
   </head>
   <body>
     <h1><a class="fire">AValz's</a> homepage</h1>
     <div class="icons">
-      <div class="icon reddit"><a href="https://www.reddit.com" target="_top"><span></span></a></div>
-      <div class="icon github"><a href="https://github.com/AValzzzz" target="_top"><span></span></a></div>
-      <div class="icon youtube"><a href="https://www.youtube.com/" target="_top"><span></span></a></div>
-      <div class="icon localhost"><a href="http://localhost:8000/" target="_top"><span></span></a></div>
+      <div class="icon reddit"><a href="https://www.reddit.com" target="_blank"><span></span></a></div>
+      <div class="icon github"><a href="https://github.com/AValzzzz" target="_blank"><span></span></a></div>
+      <div class="icon twitter"><a href="https://www.twitter.com/" target="_blank"><span></span></a></div>
+      <div class="icon localhost"><a href="http://localhost:8000/" target="_blank"><span></span></a></div>
     </div>
+    <br><br><br>
+      <input type="search" class="fake-editable" tabindex="-1" placeholder="Search for the web_">
   </body>
-</html>
+</html> 
+
 
