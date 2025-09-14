@@ -24,3 +24,28 @@ And no, you *probably* shouldn't just copy-paste them — unless you enjoy debug
 ![Firefox](img/screenshot_20250812_211327.png)
 
 ![Wofi](img/screenshot_20250812_211616.png)
+
+
+
+```sh
+sudo pacman -Syu
+sudo pacman -S nvidia-open-dkms nvidia-utils
+sudo pacman -S linux-headers
+```
+
+Dans le fichier /etc/default/grub :
+```sh
+#Ajouter
+GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet nvidia-drm.modeset=1
+#Décommenter
+GRUB_DISABLE_OS_PROBER=false
+```
+
+Dans /etc/mkinitcpio.conf
+```sh
+MODULES=(nvidia nvidia_modeset nvidia_uvm nvidia_drm)
+```
+
+
+
+
